@@ -1,0 +1,19 @@
+include ./mixins
+
+-var title = 'My Title'
+
+block vars
+
+
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title #{title}
+		include ./blocks/css
+	body
+		include ./blocks/header
+		block content
+		include ./blocks/footer
+		include ./blocks/js
